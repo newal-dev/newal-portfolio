@@ -1,4 +1,4 @@
-# Newal Elias · Portfolio
+# Newal E. Mohammed · Portfolio
 
 My personal portfolio website: selected projects, the services I offer, experience and contact details.
 
