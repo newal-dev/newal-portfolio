@@ -1,12 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newal Elias · Full-Stack Developer</title>
+  <meta name="description" content="Newal Elias is a full-stack developer in Ethiopia who builds fast, accessible websites and web apps. Top 3 at the ALX Accessibility Hackathon.">
+  <meta property="og:title" content="Newal Elias · Full-Stack Developer">
+  <meta property="og:description" content="Fast, accessible websites and web apps. Top 3 at the ALX Accessibility Hackathon.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/inclusive-access.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c5d43'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='38' fill='%23fff'%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>This is a test website.</h1>
-    <p>It's cool to learn new things!</p>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Newal Elias, home">
+        <span class="mark" aria-hidden="true">N</span>
+        <span>Newal Elias</span>
+      </a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a class="nav-cta" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Available for new projects</p>
+        <h1>I build websites and web apps that are <em>fast</em>, <em>accessible</em> and made to last.</h1>
+        <p class="lede">I'm Newal, a full-stack developer in Ethiopia and a 4th-year Computer Science student (3.94 GPA). From business websites to role-based systems with logins and dashboards, I take projects from first idea to live launch.</p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:newalelias71@gmail.com?subject=Website%20project">Start a project</a>
+          <a class="btn" href="#work">See my work</a>
+        </div>
+
+        <ul class="stats" aria-label="Highlights">
+          <li><strong>Top 3</strong><span>ALX Accessibility Hackathon</span></li>
+          <li><strong>3</strong><span>live sites you can open today</span></li>
+          <li><strong>6</strong><span>languages supported in one product</span></li>
+          <li><strong>150+</strong><span>automated tests on every change</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section" id="work" aria-labelledby="work-h">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Selected work</p>
+          <h2 id="work-h">Projects people actually use</h2>
+        </div>
+
+        <article class="project featured">
+          <a class="shot" href="https://inclusive-access.onrender.com/site/" target="_blank" rel="noopener">
+            <span class="browser" aria-hidden="true"><i></i><i></i><i></i></span>
+            <img src="images/inclusive-access.jpg" width="1280" height="800" loading="lazy" alt="The Inclusive Access sign-up form on a demo partner website, with language buttons for English, Amharic, Afaan Oromoo, Tigrinya, Somali and Sidaamu Afoo.">
+          </a>
+          <div class="project-body">
+            <p class="tag award">🏆 Top 3 · ALX Accessibility Hackathon</p>
+            <h3>Inclusive Access</h3>
+            <p>An accessible sign-up and job-search plug-in that any website can add with two lines of code. Built with Team Pixel so that people can register, find jobs and apply in their own language, by typing or by voice.</p>
+            <ul class="points">
+              <li>Six languages: English, አማርኛ, Afaan Oromoo, ትግርኛ, Soomaali, Sidaamu Afoo</li>
+              <li>Voice input and read-aloud on every step; full keyboard and screen-reader support</li>
+              <li>Works inside any site without breaking its design (Web Components, Shadow DOM)</li>
+              <li>150+ automated tests and a WCAG 2.2 AA accessibility report</li>
+            </ul>
+            <p class="stack">Node.js · Web Components · REST API · Docker · Playwright</p>
+            <div class="links">
+              <a class="btn small primary" href="https://inclusive-access.onrender.com/site/" target="_blank" rel="noopener">Live demo</a>
+              <a class="btn small" href="https://github.com/newal-dev/new-track1" target="_blank" rel="noopener">Code</a>
+            </div>
+            <p class="note">Free hosting: the demo can take up to a minute to wake up on the first visit.</p>
+          </div>
+        </article>
+
+        <div class="grid">
+          <article class="project card">
+            <div class="cover cover-a" aria-hidden="true">
+              <span class="pill">Live</span>
+              <span class="cover-title">Property<br>Listings</span>
+            </div>
+            <div class="project-body">
+              <h3>Property Listing Platform</h3>
+              <p>A full platform where owners list properties, visitors browse and save favourites, and admins moderate. Built end to end and deployed live.</p>
+              <ul class="points">
+                <li>Secure logins with separate Admin, Owner and User dashboards</li>
+                <li>Image uploads, search filters and pages that load fast</li>
+              </ul>
+              <p class="stack">Next.js · Node.js · PostgreSQL · Prisma</p>
+              <div class="links">
+                <a class="btn small primary" href="https://mini-property-listing-platform-khnu.vercel.app/" target="_blank" rel="noopener">Live site</a>
+                <a class="btn small" href="https://github.com/newal-dev/mini-property-listing-platform" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="cover cover-b" aria-hidden="true">
+              <span class="pill">Real company</span>
+              <span class="cover-title">Logistics<br>Operations</span>
+            </div>
+            <div class="project-body">
+              <h3>Reflect Logistics System</h3>
+              <p>The internal operations system I helped build for Reflect Logistics and Transport PLC, with separate access for management, operations, secretary and finance staff.</p>
+              <ul class="points">
+                <li>Tracks every shipment from request to payment, with full history</li>
+                <li>Invoices calculated to match the company's real paper forms, with PDF export</li>
+              </ul>
+              <p class="stack">Node.js · Express · PostgreSQL · Prisma</p>
+              <div class="links">
+                <a class="btn small" href="https://github.com/newal-dev/reflect_logistics" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="cover cover-c" aria-hidden="true">
+              <span class="pill">Live</span>
+              <span class="cover-title">Student<br>Records</span>
+            </div>
+            <div class="project-body">
+              <h3>EduTrack</h3>
+              <p>A student record management system for schools, with secure login and tools to add, search, update and remove student records.</p>
+              <p class="stack">PHP · MySQL · JavaScript · Bootstrap</p>
+              <div class="links">
+                <a class="btn small primary" href="https://student-management-web.kesug.com/login.php" target="_blank" rel="noopener">Live demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section alt" id="services" aria-labelledby="services-h">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">What I can build for you</p>
+          <h2 id="services-h">From a simple website to a full system</h2>
+        </div>
+        <ul class="services">
+          <li>
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>
+            </span>
+            <h3>Business websites</h3>
+            <p>A clean, modern site that tells customers who you are and how to reach you, and looks great on phones.</p>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+            </span>
+            <h3>Web apps with logins</h3>
+            <p>Booking, listings, records or internal tools, with accounts, roles and dashboards for your team.</p>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg>
+            </span>
+            <h3>Accessible and multilingual</h3>
+            <p>Sites everyone can use, including screen-reader and keyboard users, in English, Amharic and more.</p>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l3 6 6 1-4.5 4 1 6-5.5-3-5.5 3 1-6L3 10l6-1z"/></svg>
+            </span>
+            <h3>Launch and hosting</h3>
+            <p>I put your site online, connect your domain and hand it over with everything you need to run it.</p>
+          </li>
+        </ul>
+
+        <ol class="process" aria-label="How I work">
+          <li><strong>1. Talk</strong><span>We agree on your goals, pages and timeline.</span></li>
+          <li><strong>2. Design</strong><span>You see the layout before any building starts.</span></li>
+          <li><strong>3. Build</strong><span>Regular updates and a live preview link as I go.</span></li>
+          <li><strong>4. Launch</strong><span>Your site goes live, and I stay available for fixes.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience" aria-labelledby="exp-h">
+      <div class="wrap two-col">
+        <div>
+          <div class="section-head">
+            <p class="kicker">Experience</p>
+            <h2 id="exp-h">Where I've worked</h2>
+          </div>
+          <ol class="timeline">
+            <li>
+              <h3>Reflect Logistics and Transport PLC</h3>
+              <p class="role">Software Developer Intern</p>
+              <p>Helped design and build the company's internal operations platform for shipments, fleet, customers and finance, with separate access for each role.</p>
+            </li>
+            <li>
+              <h3>ConDigital</h3>
+              <p class="role">AI Trainer</p>
+              <p>Recorded step-by-step demonstrations of real marketing workflows, used as training data to teach AI systems how to carry out those tasks.</p>
+            </li>
+            <li>
+              <h3>ALX Accessibility Hackathon</h3>
+              <p class="role">Developer, Team Pixel · Top 3</p>
+              <p>Built and pitched Inclusive Access, an accessible, multilingual sign-up and job plug-in, as one of the top three teams.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <div class="section-head">
+            <p class="kicker">Skills</p>
+            <h2>Tools I use</h2>
+          </div>
+          <dl class="skills">
+            <div><dt>Frontend</dt><dd>HTML, CSS, JavaScript, React, Next.js, TanStack Query</dd></div>
+            <div><dt>Backend</dt><dd>Node.js, Express, REST APIs, Prisma, PHP</dd></div>
+            <div><dt>Databases</dt><dd>PostgreSQL, MySQL, SQL Server</dd></div>
+            <div><dt>Quality</dt><dd>Accessibility (WCAG 2.2), Playwright, automated testing</dd></div>
+            <div><dt>Hosting</dt><dd>Vercel, Render, Neon, Docker, GitHub Actions</dd></div>
+            <div><dt>Learning now</dt><dd>Machine learning and AI-powered features</dd></div>
+          </dl>
+          <p class="edu"><strong>Education</strong> · BSc Computer Science, 4th year · GPA 3.94</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-h">
+      <div class="wrap">
+        <h2 id="contact-h">Have a project in mind?</h2>
+        <p>Tell me a little about what you need, and I'll get back to you soon.</p>
+        <div class="actions center">
+          <a class="btn primary light" href="mailto:newalelias71@gmail.com?subject=Website%20project">newalelias71@gmail.com</a>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.linkedin.com/in/newal-mohammed1" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/newal-dev" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© <span id="year">2026</span> Newal Elias</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
